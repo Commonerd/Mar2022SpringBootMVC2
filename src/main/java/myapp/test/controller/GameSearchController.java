@@ -51,7 +51,7 @@ public class GameSearchController {
 		return mav;
 	}
 
-	@ExceptionHandler(NullPointerException.class)
+	@ExceptionHandler(NullPointerException.class) //일반컨트롤에서도 처리가능
 	public String handleNullPointerException(NullPointerException ex) {
 		return "error/nullException";//view name
 	}
